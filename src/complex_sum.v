@@ -11,10 +11,7 @@ module complex_sum(
 wire    signed  [ 16 :  0 ] w_Re = Re_1 + Re_2;
 wire    signed  [ 16 :  0 ] w_Im = Im_1 + Im_2;
 
-//assign Re_out = w_Re[16] ? w_Re[16-:16] + 1'b1 : w_Re[16-:16];
 assign Re_out = w_Re[16-:16];
-//assign Im_out = w_Im[16] ? w_Im[16-:16] + 1'b1 : w_Im[16-:16];
 assign Im_out = w_Im[16-:16];
-
 
 endmodule
